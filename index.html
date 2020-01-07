@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Section 2: JavaScript Language Basics</title>
+    <link rel="stylesheet" href="file.css">
+  </head>
+
+  <body>
+    <div id="mycal">
+      <form name="f">
+        <input type="text" name="formName" placeholder="0" class = "jayjay"/><br />
+        <div id = "kay">
+        <input type="button" value="1" onclick="f.formName.value+=1" />
+        <input type="button" value="2" onclick="f.formName.value+=2" />
+        <input type="button" value="3" onclick="f.formName.value+=3" />
+        <input type="button" value="+" onclick="add()" /><br />
+        </div>
+
+        <input type="button" value="4" onclick="f.formName.value+=4" />
+        <input type="button" value="5" onclick="f.formName.value+=5" />
+        <input type="button" value="6" onclick="f.formName.value+=6" />
+        <input type="button" value="-" onclick="sub()" />
+        <br />
+        <input type="button" value="7" onclick="f.formName.value+=7" />
+        <input type="button" value="8" onclick="f.formName.value+=8" />
+        <input type="button" value="9" onclick="f.formName.value+=9" />
+        <input type="button" value="/" onclick="di()" />
+        <br />
+        <input type="button" value="c" onclick="f.formName.value=''" />
+        <input type="button" value="0" onclick="f.formName.value+=0" />
+        <input
+          type="button"
+          value="="
+          onclick="f.formName.value= eval(f.formName.value)"
+        />
+        <input type="button" value="x" onclick="mul()" />
+      </form>
+    </div>
+  </body> 
+
+  <script src="file.js"></script
+</html>
